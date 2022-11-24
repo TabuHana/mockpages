@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+  --brand: #5a45b0;
+  --primary: #151521;
+  --secondary: #161827;
+  --text: #fff;
+  --text-sub: #69686d;
+  --danger: #ff4b54;
+  --warning: #ff8f00;
+  --success: #33d69f;
+  --info: #4285f4;
+  --notice: #ffff00;
+  --white-thin: rgba(255, 255, 255, .1);
+  --simple-boxshadow: 0 0 10px 0px rgb(0 0 0 / 100%);
+  --sidebar-width: 0px;
+  --navbar-height: 70px;
+}
+
+@media (min-width: 501px) {
+  :root {
+    ---sidebar-width: 72px;
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    ---sidebar-width: 230px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Mulish, sans-serif;
+}
+
+body {
+  background: var(--primary);
+  color: var(--text);
+  height: 100vh;
+  width: 100vw;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.navbar {
+  z-index: 3;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--navbar-height);
+  width: calc(100vw - var(--sidebar-width) );
+  left: calc(var(--sidebar-width) + 1px);
+  background: var(--secondary);
+  padding: 0px 50px;
+  border-bottom: 1px solid var(--white-thin);
+}
+
+
+.container {
+  padding: 50px;
+  overflow: hidden auto;
+  font-size: 16px;
+  position: absolute;
+  height: calc(100vh - var(--navbar-height));
+  width: calc(100vw - var(--sidebar-width));
+  top: calc(var(--navbar-height) - 1px);
+  left: calc(var(--sidebar-width) + 1px);
+}
+
+.card {
+  background: var(--secondary);
+  padding: 15px;
+  border: 1px solid var(--white-thin);
+  margin-bottom: 30px;
+}
+
+.card .header {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
