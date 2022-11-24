@@ -1,8 +1,8 @@
 # Mock pages 
 
-These are some mock pages I made to practice HTML/CSS feel free to copy or take. No pages contain any JS, these are simply mock ups.
+These are some mock pages I made to practice HTML/CSS feel free to copy or take. Not all pages contain JS.
 
-Code for each page is labled.
+Not all mockpages stored here and some may be privated.
 View live pages from the link below. 
 
 [Link To Page](https://tabuhana.github.io/mockpages/)
