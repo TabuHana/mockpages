@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="financial assistance mock up page" />
+		<meta name="keywords" content="financial, assistance, mockup" />
+		<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+		<link rel="stylesheet" href="./css/utilities.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<script
+			defer
+			src="https://kit.fontawesome.com/e855f940f0.js"
+			crossorigin="anonymous"
+		></script>
+		<title>EdgeLedger | Post One</title>
+	</head>
+	<body id="home">
+		<header class="hero blog">
+			<div id="navbar" class="navbar">
+				<h1 class="logo">
+					<span class="text-primary"><i class="fas fa-book-open"></i> Edge</span
+					>Ledger
+				</h1>
+				<nav>
+					<ul>
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="./index.html#about">About</a></li>
+						<li><a href="./index.html#cases">Cases</a></li>
+						<li><a href="./index.html#blog">Blog</a></li>
+						<li><a href="./index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="content">
+				<h1>Blog</h1>
+			</div>
+		</header>
+
+		<main>
+			<section class="post">
+				<h2>Blog Post One</h2>
+				<p class="meta">
+          <img src="img/blog/blog1.jpg" alt="blog 1">
+					<i class="fas fa-user"></i>
+					Posted By <strong>Bill Bob</strong> | Jan. 1 2029
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas
+					vero quidem qui commodi ex quam reprehenderit nesciunt dicta? Sint est
+					repudiandae sapiente nisi voluptate porro numquam maiores provident
+					error.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
+					assumenda quasi labore possimus tempora vitae facilis quam hic,
+					deserunt rem nisi tenetur? Itaque vero quaerat iste velit sit beatae
+					voluptatibus suscipit ex qui? Soluta a perspiciatis alias tenetur
+					perferendis maxime voluptatum, laborum sint, distinctio quidem
+					obcaecati fugit adipisci culpa ullam deleniti placeat excepturi atque
+					eveniet enim nam, voluptate dolorum vero?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsam
+					maiores alias illum dolore pariatur, aspernatur quo delectus tenetur
+					perferendis assumenda exercitationem qui est, unde, reiciendis non.
+					Qui, dicta dolorem quas sequi repudiandae fugiat corporis porro
+					reprehenderit earum quos quis laudantium tempora autem nesciunt. Quo
+					nisi ea ipsa odit consequatur.
+				</p>
+			</section>
+		</main>
+
+		<footer class="footer bg-light">
+			<div class="social">
+				<a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+				<a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+				<a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+				<a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+			</div>
+			<p>
+				<a href="../index.html">View Other Mockpages</a>
+			</p>
+		</footer>
+
+		<script>
+			const navbar = document.getElementById('navbar');
+			let scrolled = false;
+
+			window.onscroll = () => {
+				if(window.pageYOffset > 100) {
+					navbar.classList.remove('top');
+					if(!scrolled) {
+						navbar.style.transform = 'translateY(-70px)';
+					}
+					setTimeout(() => {
+						navbar.style.transform = 'translateY(0)';
+						scrolled = true;
+					}, 200);
+				} else {
+					navbar.classList.add('top');
+					scrolled = false;
+				}
+			}
+		</script>
+	</body>
+</html>
